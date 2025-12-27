@@ -1,4 +1,4 @@
-package com.ch.onlineadmin.config;
+package com.wzz.config;
 
 import com.wzz.Util.CheckToken;
 import com.wzz.service.impl.UserServiceImpl;
@@ -10,6 +10,7 @@ import org.springframework.web.servlet.HandlerInterceptor;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.util.Objects;
+
 //学生的拦截器(管理员和学生)
 @Component
 public class StudentInterceptor implements HandlerInterceptor {

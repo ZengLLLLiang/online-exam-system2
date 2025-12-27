@@ -1,4 +1,5 @@
-package com.ch.onlineadmin.config;
+package com.wzz.config;
+
 import com.wzz.Util.CheckToken;
 import com.wzz.service.impl.UserServiceImpl;
 import com.wzz.vo.TokenVo;
@@ -10,6 +11,9 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.util.Objects;
+
+
+//管理员的拦截器
 @Component
 public class AdminInterceptor implements HandlerInterceptor {
 
@@ -29,3 +33,4 @@ public class AdminInterceptor implements HandlerInterceptor {
     }
 
 }
+

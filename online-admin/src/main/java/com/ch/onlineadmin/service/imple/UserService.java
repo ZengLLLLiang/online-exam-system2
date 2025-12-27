@@ -1,4 +1,8 @@
-package com.ch.onlineadmin.service.imple;
+package com.wzz.service;
 
-public interface UserService {
+import com.baomidou.mybatisplus.extension.service.IService;
+import com.wzz.entity.User;
+
+
+public interface UserService extends IService<User> {
 }

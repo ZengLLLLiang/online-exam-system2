@@ -1,4 +1,4 @@
-package com.ch.onlineadmin.config;
+package com.wzz.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -8,7 +8,6 @@ import springfox.documentation.service.ApiInfo;
 import springfox.documentation.service.Contact;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
-
 
 @Configuration //在springboot中加载配置文件
 public class SwaggerConfig {
@@ -32,3 +31,4 @@ public class SwaggerConfig {
                 .build();
     }
 }
+

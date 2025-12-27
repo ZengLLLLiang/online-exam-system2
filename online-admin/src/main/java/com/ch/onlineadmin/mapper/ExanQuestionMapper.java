@@ -1,4 +1,10 @@
-package com.ch.onlineadmin.mapper;
+package com.wzz.mapper;
 
-public interface ExanQuestionMapper {
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.wzz.entity.Question;
+import org.springframework.stereotype.Repository;
+
+
+@Repository//代表持久层
+public interface QuestionMapper extends BaseMapper<Question> {
 }

@@ -1,4 +1,5 @@
-package com.ch.onlineadmin.config;
+package com.wzz.config;
+
 import com.fasterxml.jackson.annotation.JsonAutoDetect;
 import com.fasterxml.jackson.annotation.PropertyAccessor;
 import com.fasterxml.jackson.databind.DeserializationFeature;
