@@ -14,8 +14,8 @@ import java.util.UUID;
 public class OSSUtil {
 
     public static String ENDPOINT = "oss-cn-shanghai.aliyuncs.com";
-    public static String ACCESSKEYID = "LTAI4FbgffEVhVHiUrw71eu2";
-    public static String ACCESSKEYSECRET = "RyWJQT7a7iH002tkSSwv58QPEfxzCH";
+    private static final String ACCESS_KEY_ID = "your_access_key_id";
+    private static final String ACCESS_KEY_SECRET = "your_access_key_secret";
     public static String BUCKETNAME = "zzuoss";
     public static String KEY = "";
 
