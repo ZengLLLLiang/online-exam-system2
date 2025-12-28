@@ -1,4 +1,10 @@
-package com.ch.onlineadmin.mapper;
+package com.wzz.mapper;
 
-public interface UserRoleMapper {
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
+import com.wzz.entity.UserRole;
+import org.springframework.stereotype.Repository;
+
+
+@Repository//代表持久层
+public interface UserRoleMapper extends BaseMapper<UserRole> {
 }

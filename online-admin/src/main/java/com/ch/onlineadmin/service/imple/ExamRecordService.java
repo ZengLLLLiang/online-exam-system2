@@ -1,4 +1,8 @@
-package com.ch.onlineadmin.service.imple;
+package com.wzz.service;
 
-public interface ExamRecordService {
+import com.baomidou.mybatisplus.extension.service.IService;
+import com.wzz.entity.ExamRecord;
+import com.wzz.entity.User;
+
+public interface ExamRecordService extends IService<ExamRecord> {
 }

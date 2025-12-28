@@ -1,4 +1,8 @@
-package com.ch.onlineadmin.service.imple;
+package com.wzz.service;
 
-public interface AnswerService {
+import com.baomidou.mybatisplus.extension.service.IService;
+import com.wzz.entity.Answer;
+
+
+public interface AnswerService extends IService<Answer> {
 }

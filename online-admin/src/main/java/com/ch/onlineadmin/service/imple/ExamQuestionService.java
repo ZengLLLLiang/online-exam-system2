@@ -1,4 +1,8 @@
-package com.ch.onlineadmin.service.imple;
+package com.wzz.service;
 
-public interface ExamQuestionService {
+import com.baomidou.mybatisplus.extension.service.IService;
+import com.wzz.entity.ExamQuestion;
+
+
+public interface ExamQuestionService extends IService<ExamQuestion> {
 }

@@ -1,4 +1,9 @@
-package com.ch.onlineadmin.service.imple;
+package com.wzz.service;
 
-public interface QuesfionBankService {
+import com.baomidou.mybatisplus.extension.service.IService;
+import com.wzz.entity.QuestionBank;
+
+
+public interface QuestionBankService extends IService<QuestionBank> {
 }
+
