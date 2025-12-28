@@ -9,19 +9,19 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.UUID;
 
-
 //阿里云上传的工具类
 public class OSSUtil {
 
     public static String ENDPOINT = "oss-cn-shanghai.aliyuncs.com";
+    // 修正：变量名和后续调用保持一致（占位符无敏感信息）
     private static final String ACCESS_KEY_ID = "your_access_key_id";
     private static final String ACCESS_KEY_SECRET = "your_access_key_secret";
     public static String BUCKETNAME = "zzuoss";
     public static String KEY = "";
 
     public static String picOSS(MultipartFile uploadFile) throws Exception {
-        // 创建OSSClient实例
-        OSSClient ossClient = new OSSClient(ENDPOINT, ACCESSKEYID, ACCESSKEYSECRET);
+        // 关键修正：把 ACCESSKEYID → ACCESS_KEY_ID，ACCESSKEYSECRET → ACCESS_KEY_SECRET
+        OSSClient ossClient = new OSSClient(ENDPOINT, ACCESS_KEY_ID, ACCESS_KEY_SECRET);
         SimpleDateFormat sf = new SimpleDateFormat("yyyy-MM-dd");
         // 上传
         long time = new Date().getTime();
@@ -38,8 +38,6 @@ public class OSSUtil {
 
         // 关闭client
         ossClient.shutdown();
-//        Date expiration = new Date(new Date().getTime() + 3600L * 1000 * 24 * 365 * 10);
-//        return ossClient.generatePresignedUrl(BUCKETNAME, KEY + date + "/" + uploadFile.getOriginalFilename(), expiration).toString();
         return "https://" + BUCKETNAME + ".oss-cn-shanghai.aliyuncs.com" + "/" + KEY + date + "/" + fileName;
     }
 
